@@ -1,3 +1,16 @@
+
+/**
+ * The following is the wiring required from the Arduino Pins: 
+ *  10 to LED; 
+ *  11 to Optocupler; 
+ *  A0 to 10K Potentiometer [peek bias (Sawtooth wave)]; 
+ *  A1 to 10K Potentiometer [waveform]; 
+ *  A2 to 10K Potentiometer [rate] 
+ *  then one wire from the Jacks can be corrected directly to the 
+ *  matching connector on the other jack and the other can be connected 
+ *  through the Optocoupler and the 250K Potentiometer.
+ */
+
 void setup() {
   pinMode(10, OUTPUT);//to LED
   pinMode(11, OUTPUT);//to Optocupler
